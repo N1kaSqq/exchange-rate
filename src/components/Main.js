@@ -95,11 +95,7 @@ export default class Main extends Component {
                 currency: value
             }
         })
-        this.draw();
-        fetch('http://localhost:3030/api/getdata')
-        .then((cart)=>{
-           console.log(cart);
-        })   
+        this.draw();   
     }
 
     async setCurrentDate(start, end) {
