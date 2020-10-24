@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
@@ -59,7 +59,9 @@ export default function DatePickers(props) {
     endDate,
   });
 
-
+  useEffect(() => {
+    props.setCurrentDate(state.startDate, state.endDate);
+  }, []);
 
   return (
     <form className={classes.container} noValidate>

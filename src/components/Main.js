@@ -56,8 +56,8 @@ export default class Main extends Component {
               },
               loaded: false,
               currency: '145',
-              startDate: '2020-07-10',
-              endDate: '2020-07-17',
+              startDate: '2020-10-10',
+              endDate: '2020-10-17',
 
         }
     }
